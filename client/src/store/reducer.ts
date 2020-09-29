@@ -1,4 +1,4 @@
-import initialState from "../state/state";
+import initialState from "./state";
 import StateT from "../types/StateT";
 
 import ActionI from "../interfaces/Action";

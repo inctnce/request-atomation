@@ -13,7 +13,7 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
 
-    app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:password@localhost/spbu_automation_app"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:password@localhost/request_automation"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     app.config["CLIENT_FILES"] = "/request_files"
 

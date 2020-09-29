@@ -156,4 +156,11 @@ psd
 thumb
 sketch
 
+### VisualStudioCode ###
+.vscode
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
 # End of https://www.toptal.com/developers/gitignore/api/flask,react

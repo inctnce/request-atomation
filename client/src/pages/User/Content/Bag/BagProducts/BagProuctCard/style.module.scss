@@ -1,0 +1,88 @@
+@import "../../../../../../assets/styles/themes/light_theme.module.scss";
+@import "../../../../../../assets/styles/cards/card.module.scss";
+
+.title {
+  font-weight: bold;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.specs_table {
+  width: auto;
+
+  margin: 5px;
+  margin-bottom: 10px;
+
+  border: 1.5px solid $l2_color;
+  border-radius: 5px;
+
+  // empty-cells: hide;
+}
+
+.specs_table tr:last-child td {
+  border-bottom: none;
+}
+
+.specs_table tr td:first-child {
+  width: 160px;
+  border-right: 1.5px solid $l2_color;
+}
+
+.specs_table tr td:last-child {
+  width: 80px;
+  color: #484a48;
+}
+
+.field {
+  font-size: 0.9em;
+  padding: 5px;
+  border-bottom: 1px solid $l2_color;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+
+  text-align: center;
+  font-weight: bold;
+
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  padding: 5px;
+  margin: 10px 5px 5px 5px;
+
+  background: url("../../../../../../assets/images/delete.png") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+.button:hover {
+  background: url("../../../../../../assets/images/delete_active.png") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+.quantity_picker {
+  width: 30px;
+  height: 30px;
+  padding-left: 2px;
+  padding-right: 2px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.td {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border-bottom: 1px solid $l2_color;
+}

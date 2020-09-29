@@ -1,0 +1,36 @@
+@import "../../../../assets/styles/themes/light_theme.module.scss";
+
+.search_wrapper {
+  height: 40px;
+  width: 260px;
+
+  display: inline-flex;
+  margin: auto;
+}
+
+.search_input {
+  height: 40px;
+  width: 260px;
+
+  margin: auto;
+
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../../../../assets/images/search.png");
+  background-repeat: no-repeat;
+  background-position: 15px;
+  background-size: 20px 20px;
+
+  outline: none;
+  border: 2px solid $l2_color;
+  border-radius: 20px;
+
+  padding-left: 40px;
+}
+
+.search_input:focus {
+  border: 2px solid $p_color;
+}
+
+.search_input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}

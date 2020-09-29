@@ -7,8 +7,8 @@ import * as serviceWorker from "./serviceWorker";
 import store from "./store/store";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import LoginFormContainer from "./pages/LoginForm/LoginFormContainer";
-import SignUp from "./pages/SignUpForm/SignUpFormContainer";
+import LoginFormContainer from "./pages/User/LoginForm/container";
+import SignUp from "./pages/User/SignUpForm/container";
 
 ReactDOM.render(
   <React.StrictMode>

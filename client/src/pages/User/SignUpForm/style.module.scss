@@ -1,0 +1,64 @@
+@import "../../../assets/styles/fields/field.module.scss";
+@import "../../../assets/styles/cards/card.module.scss";
+@import "../../../assets/styles/buttons/button.module.scss";
+@import "../../../assets/styles/links/link.module.scss";
+@import "../../../assets/styles/checkboxes/checkbox.scss";
+
+.card {
+  @include card();
+  height: 31em;
+  width: 21em;
+
+  margin: auto;
+  margin-top: 50px;
+}
+
+.logo_wrapper {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.logo {
+  height: 3em;
+  width: 3em;
+}
+
+.field {
+  @include field();
+
+  display: block;
+
+  width: 19em;
+
+  padding: 0.5em;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.label {
+  margin-left: 0.3em;
+}
+
+.checkbox_wrapper {
+  margin-left: 0.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.checkbox {
+  @include checkbox();
+}
+
+.button {
+  @include button();
+
+  margin: 0.5em;
+}
+
+.link {
+  @include link($text_color: $p_color);
+
+  margin-left: 5.8em;
+  font-weight: normal;
+}

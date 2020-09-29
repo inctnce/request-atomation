@@ -3,9 +3,9 @@ import style from "./App.module.scss";
 
 import { StateT } from "../../types/StateT";
 
-import Content from "../Content/Content/Content";
+import Content from "../User/Content";
 import { CombinedState } from "redux";
-import HeaderContainer from "../Header/Header/HeaderContainer";
+import HeaderContainer from "../User/Header/Header/container";
 
 type Props = {
   state: CombinedState<{ app: StateT }>;

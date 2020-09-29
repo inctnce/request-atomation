@@ -1,0 +1,117 @@
+@import "../../../../../../../assets/styles/cards/card.module.scss";
+@import "../../../../../../../assets/styles/fields/field.module.scss";
+@import "../../../../../../../assets/styles/buttons/button.module.scss";
+
+.title {
+  margin: 10px;
+}
+
+.card {
+  @include card();
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 300px;
+
+  padding: 5px;
+}
+
+.selector {
+  @include field();
+  width: 455px;
+  height: 40px;
+}
+
+.field {
+  @include field();
+  width: 435px;
+  margin-top: 5px;
+}
+
+.spec_field {
+  @include field();
+  width: 200px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.value_field {
+  @include field();
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+.extra_info {
+  @include field();
+  margin-top: 5px;
+  width: 430px;
+  height: 60px;
+  min-height: 60px;
+}
+
+.specifications_title {
+  margin-left: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.button {
+  @include button();
+  margin-top: 30px;
+}
+
+.plus_button {
+  width: 30px;
+  height: 30px;
+
+  text-align: center;
+  font-weight: bold;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  border: none;
+  outline: none;
+
+  margin-bottom: 5px;
+
+  padding: 5px;
+
+  background: url("../../../../../../../assets/images/plus.png") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+
+  background-color: $p_color;
+}
+
+.plus_button:hover {
+  background-color: $p_dark_color;
+}
+
+.minus_button {
+  width: 30px;
+  height: 30px;
+
+  text-align: center;
+  font-weight: bold;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  border: none;
+  outline: none;
+
+  padding: 5px;
+
+  background: url("../../../../../../../assets/images/minus.png") no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+
+  background-color: $p_color;
+}
+
+.minus_button:hover {
+  background-color: $p_dark_color;
+}

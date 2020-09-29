@@ -1,0 +1,17 @@
+.history_wrapper {
+  display: grid;
+
+  grid-template-areas: "manage_history bag_history";
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.manage_history_wrapper {
+  grid-area: manage_history;
+}
+
+.bag_history_wrapper {
+  grid-area: bag_history;
+}

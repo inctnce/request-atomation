@@ -1,0 +1,32 @@
+@import "../themes/light_theme.module.scss";
+
+@mixin link(
+  $text_color: $l1_text_color,
+  $text_size: 1em,
+  $text_weight: normal,
+  $focus_weight: normal,
+  $active_color: $p_dark_color
+) {
+  color: $text_color;
+  font-size: $text_size;
+  font-weight: $text_weight;
+  text-decoration: none;
+
+  background-color: rgba(0,0,0,0);
+
+  &:not([disabled]):hover {
+    color: $active_color;
+  }
+
+  &:not([disabled]):active {
+    color: $active_color;
+    text-decoration: none;
+  }
+
+  &:not([disabled]):focus {
+    outline: none;
+    font-weight: $focus_weight;
+    color: $active_color;
+    text-decoration: none;
+  }
+}

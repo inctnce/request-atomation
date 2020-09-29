@@ -1,0 +1,34 @@
+@import "../../../../assets/styles/cards/card.module.scss";
+@import "../../../../assets/styles/fields/field.module.scss";
+@import "../../../../assets/styles/buttons/button.module.scss";
+
+
+.label {
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.card {
+  @include card();
+  padding: 10px;
+  width: 400px;
+}
+
+.text_field {
+  @include field();
+  width: 380px;
+
+  margin: 5px;
+  padding: 5px;
+}
+
+.detail_field {
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+.button {
+  @include button();
+  margin-top: 15px;
+  margin-left: 5px;
+}

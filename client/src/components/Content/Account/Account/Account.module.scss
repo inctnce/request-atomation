@@ -1,0 +1,25 @@
+.account_wrapper {
+  display: grid;
+
+  grid-template-areas: "settings option";
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 130px 5fr;
+  grid-gap: 10px;
+}
+
+.settings_wrapper {
+  grid-area: settings;
+}
+
+.option_wrapper {
+  grid-area: option;
+}
+
+.span {
+  color: #2962ff;
+}
+
+.content_wrapper {
+  margin: 20px;
+}

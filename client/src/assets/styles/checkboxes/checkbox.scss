@@ -1,0 +1,5 @@
+@import "../themes/light_theme.module.scss";
+
+@mixin checkbox($bg_color: $l2_color) {
+  background-color: $bg_color;
+}

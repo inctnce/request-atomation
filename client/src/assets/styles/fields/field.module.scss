@@ -1,0 +1,31 @@
+@import "../Themes/light_theme.module.scss";
+
+@mixin field(
+  $border_color: $l3_color,
+  $background_color: $l2_color,
+  $text_color: $l1_text_color,
+  $text_size: 1em,
+  $focus_color: $p_color
+) {
+  border: 0.1em $border_color solid;
+  border-radius: 0.3em;
+  outline: none;
+
+  background-color: $background_color;
+
+  color: $text_color;
+  font-size: $text_size;
+
+  height: 1.5em;
+  padding: 0.5em;
+
+  resize: vertical;
+
+  &:not([disabled]):focus {
+    border: 2px $focus_color solid;
+  }
+
+  &::placeholder {
+    // color: $l3_color;
+  }
+}

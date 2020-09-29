@@ -1,0 +1,15 @@
+.app_wrapper {
+  display: grid;
+
+  grid-template-areas:
+    "header"
+    "content";
+
+  grid-template-rows: 4em 10fr;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+.content_wrapper {
+  grid-area: content;
+}

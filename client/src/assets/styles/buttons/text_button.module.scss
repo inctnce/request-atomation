@@ -1,0 +1,25 @@
+@import "../Themes/light_theme.module.scss";
+
+@mixin text_button(
+  $text_color: $p_color,
+  $active_color: $p_dark_color,
+  $_bg_color: $l1_color,
+  $font_weight: bold,
+  $font_size: 1em
+) {
+  color: $text_color;
+  font-weight: $font_weight;
+  font-size: $font_size;
+
+  background-color: rgba(0, 0, 0, 0);
+
+  border-radius: 0.3em;
+  border: none;
+
+  height: 2.2em;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+
+  &:not([disabled]):hover {
+    color: $active_color;
+  }
+}

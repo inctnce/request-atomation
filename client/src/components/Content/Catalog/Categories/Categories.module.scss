@@ -1,0 +1,29 @@
+@import "../../../../assets/styles/links/link.module.scss";
+@import "../../../../assets/styles/cards/card.module.scss";
+
+.list {
+  @include card();
+  width: auto;
+
+  background-color: white;
+
+  margin: 5px;
+}
+
+.list_item {
+  display: block;
+
+  height: auto;
+  line-height: auto;
+
+  margin: 5px;
+}
+
+.button {
+  @include link($focus_weight: bold);
+  border: none;
+  text-decoration: none;
+  text-align: left;
+
+  padding: 0px 5px 5px 0px;
+}

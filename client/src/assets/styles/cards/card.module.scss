@@ -1,0 +1,8 @@
+@import "../themes/light_theme.module.scss";
+
+@mixin card($bg_color: $l1_color) {
+  background-color: $bg_color;
+  border-radius: 0.5em;
+
+  padding: 0.5em;
+}

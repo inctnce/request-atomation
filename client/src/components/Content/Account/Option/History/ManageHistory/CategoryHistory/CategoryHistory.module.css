@@ -1,0 +1,57 @@
+.subtitle {
+  margin: 10px;
+}
+
+.list_item {
+  width: 400px;
+  height: 40px;
+
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+
+  display: grid;
+
+  grid-template-areas: "info del_btn";
+
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+}
+
+.category_info {
+  grid-area: info;
+  background-color: white;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+
+  padding-left: 5px;
+
+  font-weight: bold;
+}
+
+.del_button {
+  width: 80px;
+  height: 40px;
+
+  text-align: center;
+  font-weight: bold;
+
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  background-color: #eb3223;
+  color: white;
+
+  padding: 5px;
+}
+
+.del_button:hover {
+  background-color: #d22113;
+}
+
+.category_list {
+  grid-area: categories;
+}

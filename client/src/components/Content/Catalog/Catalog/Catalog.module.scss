@@ -1,0 +1,25 @@
+.catalog_wrapper {
+  display: grid;
+
+  grid-template-areas: "categories  products";
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 10px;
+}
+
+.list {
+  grid-area: categories;
+}
+
+.category {
+  grid-area: products;
+}
+
+.span {
+  color: #2962ff;
+}
+
+.content_wrapper {
+  margin: 20px;
+}

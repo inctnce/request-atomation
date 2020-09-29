@@ -1,0 +1,24 @@
+@import "../Themes/light_theme.module.scss";
+
+@mixin button(
+  $bg_color: $p_color,
+  $active_color: $p_dark_color,
+  $text_color: white,
+  $font_weight: normal,
+  $font_size: 1em
+) {
+  color: $text_color;
+  font-weight: $font_weight;
+  font-size: $font_size;
+
+  background-color: $bg_color;
+  border-radius: 0.3em;
+  border: none;
+
+  height: 2em;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+
+  &:not([disabled]):hover {
+    background-color: $active_color;
+  }
+}

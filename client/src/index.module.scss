@@ -1,0 +1,53 @@
+@import "./assets/styles/themes/light_theme.module.scss";
+
+:root {
+  --primary-color: #2962ff;
+  --primary-dark:  #0039cb;
+  --primary-light:  #768fff;
+
+  --secondary-color: #00bfa5;
+  --secondary-dark: #008e76;
+  --secondary-light: #5df2d6;
+
+  --danger-color: #eb3223;
+  --danger-dark: #d22113;
+
+  --light_level_1: white;
+  --light_level_2: #f2f2f2;
+  --light_level_3: #e1e2e1;
+
+  --text-color_1: black;
+
+  --padding: 5px;
+  --margin: 5px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: $l2_color;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input,
+textarea,
+[contenteditable] {
+  caret-color: var(--primary-color);
+}
+
+ul,
+li {
+  padding-left: 0;
+  list-style-type: none;
+}
+

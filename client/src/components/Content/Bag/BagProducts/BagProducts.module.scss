@@ -1,0 +1,31 @@
+@import "../../../../assets/styles/cards/card.module.scss";
+@import "../../../../assets/styles/themes/light_theme.module.scss";
+
+.label {
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.products_table {
+  @include card;
+  margin: 5px;
+}
+
+.table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.td {
+  height: 40px;
+  line-height: 40px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border-bottom: 1px solid $l2_color;
+}

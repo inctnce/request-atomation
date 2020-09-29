@@ -1,0 +1,17 @@
+.manage_wrapper {
+    display: grid;
+
+    grid-template-areas: "category product";
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.category_wrapper {
+    grid-area: category;
+}
+
+.product_wrapper {
+    grid-area: product;
+}

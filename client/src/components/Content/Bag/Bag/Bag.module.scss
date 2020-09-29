@@ -1,0 +1,59 @@
+.content_wrapper {
+  margin: 20px;
+}
+
+.send_request_btn {
+  margin: 5px;
+}
+
+.span {
+  color: #2962ff;
+}
+
+thead {
+  text-align: center;
+}
+
+.bag_wrapper {
+  display: grid;
+
+  grid-template-areas: "products info";
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.products_wrapper {
+  grid-area: products;
+  margin: 5px;
+}
+
+.info_wrapper {
+  grid-area: info;
+  margin: 5px;
+}
+
+.download_button {
+  margin: 45%;
+  margin-top: 200px;
+
+  width: auto;
+  height: auto;
+
+  text-align: center;
+  font-weight: bold;
+
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  background-color: #2962ff;
+  color: white;
+
+  padding: 8px;
+}
+
+.download_button:hover {
+  background-color: #304ffe;
+}

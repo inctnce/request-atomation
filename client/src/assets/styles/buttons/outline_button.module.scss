@@ -1,0 +1,24 @@
+@import "../Themes/light_theme.module.scss";
+
+@mixin outline_button(
+  $bg_color: $l1_color,
+  $text_color: $p_color,
+  $active_color: $l2_color,
+  $font_weight: bold,
+  $font_size: 1em
+) {
+  font-weight: $font_weight;
+  font-size: $font_size;
+  color: $text_color;
+  background-color: $bg_color;
+
+  border-radius: 0.3em;
+  border: 1px solid $text_color;
+
+  height: 2.2em;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+
+  &:not([disabled]):hover {
+    background-color: $active_color;
+  }
+}

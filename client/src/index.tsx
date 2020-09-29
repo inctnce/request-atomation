@@ -7,17 +7,17 @@ import * as serviceWorker from "./serviceWorker";
 import store from "./store/store";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import LoginFormContainer from "./App/User/LoginForm/container";
-import SignUp from "./App/User/SignUpForm/container";
-import AdminContainer from "./App/Admin/container";
+import Login from "./App/User/Login/container";
+import SignUp from "./App/User/SignUp/container";
+import Admin from "./App/Admin/container";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
         <Switch>
-          <Route path="/admin" render={() => <AdminContainer />} />
-          <Route path="/login" render={() => <LoginFormContainer />} />
+          <Route path="/admin" render={() => <Admin />} />
+          <Route path="/login" render={() => <Login />} />
           <Route path="/registration" render={() => <SignUp />} />
           <Route path="/" render={() => <AppContainer />} />
         </Switch>

@@ -1,0 +1,15 @@
+.wrapper {
+  display: grid;
+
+  grid-template-areas: "list table";
+
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 1fr;
+  gap: 64px;
+
+  margin: 16px;
+}
+
+.table {
+  grid-area: table;
+}

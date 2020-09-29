@@ -6,12 +6,11 @@ type Props = {
 };
 
 const List: React.FC<Props> = (props: Props) => {
-  return (
-    <ul className={style.table_list}>
-      <li>123</li>
-      <li>123</li>
-    </ul>
-  );
+  const items = props.items.map((item: string) => (
+    <li className={style.item}>{item}</li>
+  ));
+
+  return <ul className={style.list}>{items}</ul>;
 };
 
 export default List;

@@ -1,0 +1,21 @@
+.list {
+  grid-area: list;
+
+  background-color: var(--light_level_1);
+  border-radius: 8px;
+}
+
+.item {
+  height: 36px;
+  line-height: 36px;
+
+  padding: 4px;
+}
+
+.item:first-child {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.item:last-child {
+  border-radius: 0px 0px 8px 8px;
+}

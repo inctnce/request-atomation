@@ -1,8 +1,0 @@
-.table_list {
-  grid-area: list;
-
-  background-color: var(--light_level_1);
-  border-radius: 8px;
-
-  padding: 10px;
-}

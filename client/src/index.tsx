@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import AppContainer from "./App/container";
+import AppContainer from "./pages/container";
 import "./index.module.scss";
 import * as serviceWorker from "./serviceWorker";
 
 import store from "./store/store";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Login from "./App/User/Login/container";
-import SignUp from "./App/User/SignUp/container";
-import Admin from "./App/Admin/container";
+import Login from "./pages/User/Login/container";
+import SignUp from "./pages/User/SignUp/container";
+import Admin from "./pages/Admin/container";
 
 ReactDOM.render(
   <React.StrictMode>

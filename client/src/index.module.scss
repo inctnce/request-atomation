@@ -2,8 +2,8 @@
 
 :root {
   --primary-color: #2962ff;
-  --primary-dark:  #0039cb;
-  --primary-light:  #768fff;
+  --primary-dark: #0039cb;
+  --primary-light: #768fff;
 
   --secondary-color: #00bfa5;
   --secondary-dark: #008e76;
@@ -47,7 +47,6 @@ textarea,
 
 ul,
 li {
-  padding-left: 0;
+  padding: 0;
   list-style-type: none;
 }
-

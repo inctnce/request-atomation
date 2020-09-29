@@ -1,20 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import AppContainer from "./components/App/AppContainer";
+import AppContainer from "./pages/App/AppContainer";
 import "./index.module.scss";
 import * as serviceWorker from "./serviceWorker";
 
 import store from "./store/store";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import LoginFormContainer from "./components/LoginForm/LoginFormContainer";
-import SignUp from "./components/SignUpForm/SignUpFormContainer";
+import LoginFormContainer from "./pages/LoginForm/LoginFormContainer";
+import SignUp from "./pages/SignUpForm/SignUpFormContainer";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
         <Switch>
+          <Route path="/admin" render={() => <LoginFormContainer />} />
           <Route path="/login" render={() => <LoginFormContainer />} />
           <Route path="/registration" render={() => <SignUp />} />
           <Route path="/" render={() => <AppContainer />} />

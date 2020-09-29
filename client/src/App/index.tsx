@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import style from "./App.module.scss";
+import style from "./style.module.scss";
 
-import { StateT } from "../../types/StateT";
+import { StateT } from "../types/StateT";
 
-import Content from "../User/Content";
+import Content from "./User/Content";
 import { CombinedState } from "redux";
-import HeaderContainer from "../User/Header/Header/container";
+import HeaderContainer from "./User/Header/Header/container";
 
 type Props = {
   state: CombinedState<{ app: StateT }>;
